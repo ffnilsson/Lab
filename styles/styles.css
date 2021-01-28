@@ -43,7 +43,13 @@ nav {
 }
 
 .lista > h2 {
-  font-size: 16px;
+  font-size: 18px;
+  margin-top: 60px;
+}
+
+li > a {
+  color: #000000;
+  text-decoration: none;
 }
 
 li {
@@ -57,18 +63,18 @@ li:hover {
   border: #000000 solid 2px;
 }
 
-.objekt > a{
-  background-color: #ffffff;
-  color: #000000;
-  text-decoration: none;
-}
-
 
 .objektbesk {
   float: right;
   width: 65%;
   padding-right: 10px;
   font-size: 14px;
+}
+
+.kartlänk > a {
+  color: #d1b29c;
+  font-size: 14px;
+
 }
 
 .karta > h2 {
@@ -91,11 +97,30 @@ li:hover {
   border-left: #f5efe3 solid 2px;
 }
 
+.oppettider {
+  text-align: center;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: #f5efe3 solid 2px;
+  padding-bottom: 30px;
+}
+
+.oppettider > h1 {
+  font-size: 16px;
+}
+
+.oppettider > p {
+  font-size: 14px;
+}
+
+.bildlank {
+  margin-top: 30px;
+}
 
 footer {
   background-color: #a6aa9c;
   padding-left: 20px;
-  padding: 10px;
+  padding: 20px 10px;
+  font-size: 14px;
 }
 
 footer > a {
