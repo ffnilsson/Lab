@@ -138,11 +138,18 @@ footer {
 footer > a {
   color: #000000;
 }
+
 .choklad {
   display: flex;
-  justify-content: space-evenly;
-  margin-left: -50px;
+  align-items: flex-start;
 }
+
+.choklad > img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
 .chokladbeskrivning {
   flex-direction: row;
 }
@@ -150,7 +157,8 @@ footer > a {
 .prislista{
   margin: 10px 50px;
 }
-th, td {
+
+.prislista > table {
   border: solid black 1px;
   padding: 10px 100px ;
   text-align: center;
