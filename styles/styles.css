@@ -51,6 +51,14 @@ nav {
   margin-top: 60px;
 }
 
+.lista > ul {
+  list-style-type: none;
+}
+
+.lista > ul > li {
+  margin-left: -40px;
+}
+
 li > a {
   color: #000000;
   text-decoration: none;
@@ -61,6 +69,7 @@ li {
   padding-left: 20px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  
 }
 
 li:hover {
