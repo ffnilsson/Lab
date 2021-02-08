@@ -172,3 +172,14 @@ footer > a {
   padding: 10px 100px ;
   text-align: center;
 }
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#meddelande {
+  width: 100%;
+}
+form {
+  border-radius: 10px;
+}

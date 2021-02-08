@@ -120,6 +120,50 @@
                     <div class="bildlank">
                         <a href="https://www.kau.se" target="_blank"><img src="images/kau.png" alt="kaulogo"></a>
                     </div>
+                    <h2>Skriv till oss!</h2>
+                    <form>
+                        <div class="field">
+                            <label for="name">Ditt namn:</label>
+                            <input id="name" type="text" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Din epostadress:</label>
+                            <input id="email" type="email" placeholder="namn@example.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="color">Välj smak:</label>
+                            <select id="color">
+                              <option>Choklad</option>
+                              <option>Vit choklad</option>
+                              <option>Pecan</option>
+                            </select>
+                          </div>
+
+                        <fieldset class="field">
+                            <legend>Antal bitar</legend>
+                            <span class="radio">
+                                <input id="sex-bitar" type="radio" name="Bitar">
+                                <label for="sex-bitar">6 bitar</label>
+                            </span>
+
+                            <span class="radio">
+                                <input id="åtta-bitar" type="radio" name="Bitar">
+                                <label for="åtta-bitar">8 bitar</label>
+                            </span>
+
+                            <span class="radio">
+                                <input id="tolv-bitar" type="radio" name="Bitar">
+                                <label for="tolv-bitar">12 bitar</label>
+                            </span>
+                        </fieldset>
+
+                        <div class="field">
+                            <label for="meddelande">Skriv ditt meddelande:</label>
+                            <textarea id="meddelande" rows="10" required placeholder="Meddelande"></textarea>
+                        </div>
+                        <button type="submit">Skicka</button>
+                    </form>
+
                 </aside>
             </div>
                 
