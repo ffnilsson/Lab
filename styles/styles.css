@@ -18,24 +18,68 @@ main {
   vertical-align: middle;
 }
 
-table {
+/* menyn */
+.meny {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 0;
+  
 }
 
-td {
-  padding: 0 50px;
+.meny > li {
+  position: relative;
 }
 
-td > a {  
-  color: black;
+/* menyn, länkarna */
+.meny > li > a {
+  display: block;
+  padding: 15px;
+  color: inherit;
   text-decoration: none;
+}
+
+/* Färgskiftning när muspekaren vilar över rubrikerna */
+.meny > li:hover > a {
+  background-color: rgb(186, 190, 178);
+}
+
+/* dropdownmenyn */
+.meny > li > ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgb(186, 190, 178);
+  position: absolute; 
+  top: 100%;
+  left: 0;
+  width: 200px;
+  display: none;
+}
+
+.meny > li:hover > ul {
+  display: block;
+}
+
+/* dropdownmenyn, länkar */
+.meny > li > ul > li > a {
+  display: block;
+  padding: 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* dropdownmenyn, muspekaren på länkar */
+.meny > li > ul > li > a:hover {
+  text-decoration: underline;
 }
 
 nav {
   background-color: #a6aa9c;
-  padding: 10px;
+  
 }
 
 .left-column {
@@ -59,12 +103,12 @@ nav {
   margin-left: -40px;
 }
 
-li > a {
+.lista > ul > li > a {
   color: #000000;
   text-decoration: none;
 }
 
-li {
+.lista > ul > li {
   border: #f5efe3 solid 2px;
   padding-left: 20px;
   padding-bottom: 10px;
@@ -72,7 +116,7 @@ li {
   
 }
 
-li:hover {
+.lista > ul > li:hover {
   border: #000000 solid 2px;
 }
 
@@ -96,7 +140,11 @@ li:hover {
   padding-top: 10px;
   margin-top: 60px;
 }
-  
+
+/* karta */
+iframe {
+  border: 0;
+}
 
 .right-column {
   background-color: #ffffff;
@@ -110,6 +158,7 @@ li:hover {
   border-left: #f5efe3 solid 2px;
 }
 
+/* öppetider höger sida */
 .oppettider {
   text-align: center;
   font-family: Calibri, 'Trebuchet MS', sans-serif;
@@ -125,6 +174,7 @@ li:hover {
   font-size: 14px;
 }
 
+/* reklambild höger sida */
 .bildlank {
   margin-top: 30px;
 }
@@ -133,9 +183,19 @@ li:hover {
   width: 200px;
 }
 
-iframe {
-  border: 0;
+/* formulär höger sida*/
+.field {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
+#meddelande {
+  width: 100%;
+}
+form {
+  border-radius: 10px;
+}
+
 
 footer {
   background-color: #a6aa9c;
@@ -148,38 +208,29 @@ footer > a {
   color: #000000;
 }
 
-.choklad {
+/* Produktsidan */
+.produktbild {
   display: flex;
   align-items: flex-start;
 }
 
-.choklad > img {
+.produktbild > img {
   width: 300px;
   height: auto;
   margin-right: 20px;
 }
 
-.chokladbeskrivning {
+.beskrivning {
   flex-direction: row;
 }
 
-.prislista{
-  margin: 10px 50px;
+.prislista {
+  margin: 10px 175px;
 }
 
 .prislista > table {
   border: solid black 1px;
-  padding: 10px 100px ;
+  padding: 10px 50px ;
   text-align: center;
-}
-.field {
-  margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-}
-#meddelande {
-  width: 100%;
-}
-form {
-  border-radius: 10px;
+  width: 600px;
 }
