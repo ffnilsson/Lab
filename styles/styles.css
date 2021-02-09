@@ -90,6 +90,7 @@ nav {
   padding-bottom: 30px;
 }
 
+/* lista med produkter */
 .lista > h2 {
   font-size: 18px;
   margin-top: 60px;
@@ -113,13 +114,11 @@ nav {
   padding-left: 20px;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  
 }
 
 .lista > ul > li:hover {
   border: #000000 solid 2px;
 }
-
 
 .objektbesk {
   float: right;
@@ -131,9 +130,9 @@ nav {
 .kartlänk > a {
   color: #d1b29c;
   font-size: 14px;
-
 }
 
+/* karta, inbäddning */
 .karta > h2 {
   font-size: 16px;
   border-top: #f5efe3 solid 2px;
@@ -141,11 +140,11 @@ nav {
   margin-top: 60px;
 }
 
-/* karta */
 iframe {
   border: 0;
 }
 
+/* sidospalt höger */
 .right-column {
   background-color: #ffffff;
   display: flex;
@@ -153,7 +152,7 @@ iframe {
   width: auto;
   padding: 10px;
   width: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
   margin-left: 10px;
   border-left: #f5efe3 solid 2px;
 }
@@ -177,6 +176,8 @@ iframe {
 /* reklambild höger sida */
 .bildlank {
   margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: #f5efe3 solid 2px;
 }
 
 .bildlank > a > img {
@@ -188,12 +189,23 @@ iframe {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  font-size: 12px;
 }
 #meddelande {
   width: 100%;
 }
 form {
   border-radius: 10px;
+}
+
+.check {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.check > input {
+  display: inline-block;
 }
 
 
@@ -207,6 +219,8 @@ footer {
 footer > a {
   color: #000000;
 }
+
+
 
 /* Produktsidan */
 .produktbild {

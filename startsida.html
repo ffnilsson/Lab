@@ -8,26 +8,30 @@
     
     <body>
         <header>
-                <img class="logga" src="images/loggan.png" alt="logo" width= "200">
-                Tårtmakarna
-                <nav>
-                    <ul class="meny">
-                      <li><a href="startsida.html">Startsida</a></li>
-                      <li>
-                        <a href="">Produkter</a>
-                        <ul>
-                            <li><a href="choklad.html">Choklad</a></li>
-                            <li><a href="vitchoklad.html">Vit choklad</a></li>
-                            <li><a href="pecan.html">Pecan</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="kontakt.html">Kontakt</a></li>
+            <!-- Logga + företagsnamn -->
+            <img class="logga" src="images/loggan.png" alt="logo" width= "200">
+            Tårtmakarna
+            
+            <nav>
+                <!-- Huvudmeny -->
+                <ul class="meny">
+                    <li><a href="startsida.html">Startsida</a></li>
+                    <li>
+                    <a href="">Produkter</a>
+                    <ul>
+                        <li><a href="choklad.html">Choklad</a></li>
+                        <li><a href="vitchoklad.html">Vit choklad</a></li>
+                        <li><a href="pecan.html">Pecan</a></li>
                     </ul>
-                  </nav>
+                    </li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                </nav>
         </header>
     
         <main>
             <div class="left-column">
+                <!-- Välkomstrubrik + kort text -->
                 <div class="welcome">
                     <h2>Stans bästa tårtor!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
@@ -36,6 +40,8 @@
                        pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, 
                        aliquet nec, vulputate.</p>
                 </div>
+
+                <!-- Lista med 3 produkter, rubrik + bild + beskrivning inkl. kartlänk. Klickbara med länk till objektsida. -->
                 <div class="lista">
                     <h2>Våra tårtor:</h2>
                     <ul>
@@ -110,20 +116,29 @@
                     </ul>
 
                 </div>
+                <!-- inbäddad karta -->
                     <div class="karta">
                     <h2>Här finns vi</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.9312344187067!2d13.502538756680627!3d59.38076172580431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb3d69150ebc9%3A0xf27d002117ac79a1!2sV%C3%A4stra%20Torggatan%2014%2C%20652%2025%20Karlstad!5e0!3m2!1ssv!2sse!4v1611771792052!5m2!1ssv!2sse" width="670" height="250" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
+
+            <!-- Sidopanel höger sida: öppettider, bildlänk, formulär -->
             <div class="right-column">
                 <aside> 
+
+                    <!-- Öppettider -->
                     <div class="oppettider">
                         <h1>Öppettider</h1>
                         <p>Måndag-Fredag 07-17<br>Lördag 07-15<br>Söndag Stängt</p>
                     </div> 
+
+                    <!-- Bildlänk -->
                     <div class="bildlank">
                         <a href="https://www.kau.se" target="_blank"><img src="images/kau.png" alt="kaulogo"></a>
                     </div>
+
+                    <!-- Formulär -->
                     <h2>Skriv till oss!</h2>
                     <form>
                         <div class="field">
@@ -131,7 +146,7 @@
                             <input id="name" type="text" required>
                         </div>
                         <div class="field">
-                            <label for="email">Din epostadress:</label>
+                            <label for="email">Din e-postadress:</label>
                             <input id="email" type="email" placeholder="namn@example.com" required>
                         </div>
                         <div class="field">
@@ -165,17 +180,22 @@
                             <label for="meddelande">Skriv ditt meddelande:</label>
                             <textarea id="meddelande" rows="10" required placeholder="Meddelande"></textarea>
                         </div>
+                        <div class="check">
+                            <input id="accept-terms" type="checkbox" required> <label for="accept-terms">Jag vill få erbjudanden via e-post</label>
+                        </div>
+                        <div class="check">
+                            <input id="accept-terms" type="checkbox" required> <label for="accept-terms">Jag godkänner köpvillkoren</label>
+                        </div>
                         <button type="submit">Skicka</button>
                     </form>
 
                 </aside>
             </div>
-                
-            
         </main>
+        
         <footer>
+            <!-- Länk till e-post -->
             <a href="mailto:fridnils110@student.kau.se">Skicka ett mejl till oss!</a>
-
         </footer>  
 
     </body>
